@@ -3,7 +3,7 @@
 require "commons/env.php";
 require "commons/helper.php";
 require "commons/connect-db.php";
-require "commons/CRUD-db.php";
+require "commons/model.php";
 // require file trong controllers and models
 require_file(PATH_CONTROLLER);
 require_file(PATH_MODEL);
