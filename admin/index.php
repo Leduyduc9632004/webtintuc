@@ -14,11 +14,25 @@ $act = $_GET["act"] ?? "/";
 
 match ($act) {
     '/' => dashboard(),
+
+    // CRUD users
     'users' => listAllUser(),
     'users-detail' => showOneUser($_GET['id']),
     'users-create' => userCreate(),
     'users-update' => userUpdate($_GET['id']),
     'users-delete' => userDelete($_GET['id']),
+
+    // CRUD categories
+    'categories' => listAllCategory(),
+    'categories-create' => categoryCreate(),
+    'categories-update' => categoryUpdate($_GET['id']),
+    'categories-delete' => categoryDelete($_GET['id']),
+
+    // CRUD tags    
+    'tags' => listAllTag(), 
+    'tags-create' => tagCreate(),
+    'tags-update' => tagUpdate($_GET['id']),
+    'tags-delete' => tagDelete($_GET['id']),
 };
 
 

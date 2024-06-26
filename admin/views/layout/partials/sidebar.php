@@ -46,22 +46,22 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Quản lý danh mục</h6>
-                        <a class="collapse-item" href="buttons.html">Danh sách danh mục</a>
-                        <a class="collapse-item" href="cards.html">Thêm danh mục</a>
+                        <a class="collapse-item" href="<?= BASE_URL_ADMIN.'?act=categories' ?>">Danh sách danh mục</a>
+                        <a class="collapse-item" href="<?= BASE_URL_ADMIN.'?act=categories-create' ?>">Thêm danh mục</a>
                     </div>
                 </div>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                    <i class="fas fa-fw fa-bookmark"></i>
-                    <span>Bài viết</span>
+                    <i class="fas fa-fw fa-tag"></i>
+                    <span>Tags</span>
                 </a>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Quản lý bài viết</h6>
-                        <a class="collapse-item" href="buttons.html">Danh sách bài viết</a>
-                        <a class="collapse-item" href="cards.html">Thêm bài viết</a>
+                        <h6 class="collapse-header">Quản lý Tags</h6>
+                        <a class="collapse-item" href="<?= BASE_URL_ADMIN.'?act=tags' ?>">Danh sách Tags</a>
+                        <a class="collapse-item" href="<?= BASE_URL_ADMIN.'?act=tags-create' ?>">Thêm tags</a>
                     </div>
                 </div>
             </li>
