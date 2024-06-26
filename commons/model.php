@@ -61,8 +61,8 @@ if (!function_exists('update')) {
     }
 }
 
-if (!function_exists('delete')) {
-    function delete($tableName,$id){
+if (!function_exists('Delete')) {
+    function Delete($tableName,$id){
         try {
             $sql = "DELETE FROM $tableName where id = :id";
             $stmt = $GLOBALS['conn'] -> prepare($sql);
@@ -95,7 +95,7 @@ if (!function_exists('listAll')) {
 if (!function_exists('listOne')) {
     function listOne($tableName, $id){
         try {
-            $sql = "SELECT * FROM $tableName WHERE id = :id LIMIT 1";
+            $sql = "SELECT * FROM $tableName where id = :id";
             $stmt = $GLOBALS['conn'] -> prepare($sql);
             $stmt -> bindParam(":id", $id);
             $stmt->execute();

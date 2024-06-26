@@ -1,4 +1,5 @@
 <?php
+session_start();
 // require file trong commons
 require "../commons/env.php";
 require "../commons/helper.php";
@@ -13,6 +14,11 @@ $act = $_GET["act"] ?? "/";
 
 match ($act) {
     '/' => dashboard(),
+    'users' => listAllUser(),
+    'users-detail' => showOneUser($_GET['id']),
+    'users-create' => userCreate(),
+    'users-update' => userUpdate($_GET['id']),
+    'users-delete' => userDelete($_GET['id']),
 };
 
 
